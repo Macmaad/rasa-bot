@@ -8,6 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - chitchat
 
 responses:
   utter_greet:
@@ -28,6 +29,20 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_chitchat/ask_name:
+  - image: "https://i.imgur.com/zTvA58i.jpeg"
+    text: Hello, my name is Retrieval Bot.
+  - text: I am called Retrieval Bot!
+
+  utter_chitchat/ask_weather:
+  - text: Oh, it does look sunny right now in Berlin.
+    image: "https://i.imgur.com/vwv7aHN.png"
+  - text: I am not sure of the whole week but I can see the sun is out today.
+
+  utter_chitchat/whats_is_among_us: 
+  - text: "Is a game."
+  - text: "A multiplayer game."
 
 session_config:
   session_expiration_time: 60
