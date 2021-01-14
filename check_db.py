@@ -2,28 +2,42 @@ import sqlite3
 
 
 def db_connection():
-    '''
-    :return: DB cursor
-    '''
+    """
+    	:return: DB cursor
+    """
     conn = sqlite3.connect('rasa.db')
-    c = conn.cursor()
+    cur = conn.cursor()
 
-    return c
+    print("Database connected")
+
+    return cur
 
 
-def db_query(conn):
-    '''db_query
+def db_query(cur, query):
+    """db_query
     Prints rasa.db structure and last 10 tuples
-    '''
-    for row in conn.execute("pragma table_info(events)"):
+    """
+    for row in cur.execute("pragma table_info(events)"):
         print(row)
 
     print('------------------------------------------------')
 
-    for row in conn.execute("SELECT * FROM events order by id desc limit 10 "):
+    for row in cur.execute(query):
         print(row)
 
 
 if __name__ == "__main__":
-    conn = db_connection()
-    db_query(conn)
+
+    query = "SELECT * FROM events order by id desc limit 10 "
+
+    try:
+        cur = db_connection()
+        db_query(cur, query)
+
+    except sqlite3.Error as error:
+        print("Error while connecting to sqlite", error)
+
+    finally:
+        if(cur):
+            cur.close()
+            print("Database connection closed")
