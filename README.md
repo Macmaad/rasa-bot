@@ -19,7 +19,9 @@
 * The bot uses a lightweighted db (sqlilte3) where it stores all the conversations with the users, this way we are able to see how the bot is choosing the correct answer and which questions does the user uses. This way we can start the learning process, adding more data to the intents and responses. 
 
 ## Example: 
+* Shell Output: ![Shell](https://github.com/Macmaad/rasa-bot/blob/master/img/Screen%20Shot%202021-01-13%20at%2020.36.00.png)
 
+* Slack Output: ![Slack](https://github.com/Macmaad/rasa-bot/blob/master/img/Screen%20Shot%202021-01-13%20at%2020.36.18.png)
 
 ## Read the docs: 
 
