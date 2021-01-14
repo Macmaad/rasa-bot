@@ -26,3 +26,11 @@
 ## Read the docs: 
 
 For a better understand about what rasa is doing or how to use it, please go to the [docs](https://rasa.com/docs/rasa/).
+
+## Running in Slack: 
+1. Get token from api.slack oauth
+1. Update token on credentials.yml 
+1. Run rasa 
+1. Run ngrok on port 5005
+1. Check if the app is installed. 
+1. Test connection. 
