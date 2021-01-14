@@ -34,6 +34,7 @@ nlu:
 - intent: affirm
   examples: |
     - yes
+    - yeah
     - y
     - indeed
     - of course
@@ -43,6 +44,7 @@ nlu:
 - intent: deny
   examples: |
     - no
+    - nah
     - n
     - never
     - I don't think so
@@ -111,7 +113,8 @@ nlu:
   
 - intent: chitchat/among_us_general_win
   examples: | 
-    - How to win in among us? 
+    - How to win in among us?
+    - How do you win in among us?
 
 - intent: chitchat/among_us_impostor_win
   examples: | 
@@ -125,7 +128,8 @@ nlu:
 
 - intent: chitchat/what_is_among_us 
   examples: |
-    - Whats is among us?  
+    - What is among us?
+    - What´s among us?
 
 - intent: chitchat/among_us_devices
   examples: | 
@@ -143,7 +147,8 @@ nlu:
 - intent: chitchat/end_game
   examples: |
     - How does a game ends? 
-    - Finish game. 
+    - Finish game.
+    - How to end a game?
 
 - intent: chitchat/emergency_meeting
   examples: |
