@@ -32,5 +32,6 @@ For a better understand about what rasa is doing or how to use it, please go to 
 1. Update token on credentials.yml 
 1. Run rasa 
 1. Run ngrok on port 5005
+1. Update ngrok url in api.slack event-subscriptions
 1. Check if the app is installed. 
 1. Test connection. 
