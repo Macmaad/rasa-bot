@@ -2,6 +2,6 @@
 
 pip install rasa 
 rasa train 
-rasa shell 
+rasa shell -m models --endpoints endpoints.ym
 
 Docs: https://rasa.com/docs/rasa/
