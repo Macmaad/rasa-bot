@@ -28,21 +28,53 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot called Eva."
 
   utter_chitchat/ask_name:
-  - image: "https://i.imgur.com/zTvA58i.jpeg"
-    text: Hello, my name is Retrieval Bot.
-  - text: I am called Retrieval Bot!
+  - text: Hello, my name Eva.
+  - text: I am called Eva!
 
   utter_chitchat/ask_weather:
   - text: Oh, it does look sunny right now in Berlin.
     image: "https://i.imgur.com/vwv7aHN.png"
   - text: I am not sure of the whole week but I can see the sun is out today.
 
-  utter_chitchat/whats_is_among_us: 
-  - text: "Is a game."
-  - text: "A multiplayer game."
+  utter_chitchat/among_us_tasks:
+  - text: The tasks on among us are broken down into 3 categories – Short, Long and Common tasks.
+  - text: In total it has 12 tasks broken dowin into 3 categories - short, long and common tasks. 
+
+  utter_chitchat/among_us_general_win: 
+  - text: Tip... Stay focused, from beginning to end. If you are a crewmate, don’t remember the names of people you pass, instead, remember the colours. 
+  - text: Tip... Keep an eye out for irregularities between crewmates, see someone in electrical and suddenly you see them running out of Navigation, how did they beat you there without venting?
+
+  utter_chitchat/among_us_impostor_win:
+  - text: Kill all the crewmates or make everyone suspect about anyone else but not from you. 
+  - text: Tip... As an impostor it is your job to pick off the crewmates 1 by 1 – Or 2 by 2, with a well-synchronized impostor team. Always memorize your alibi, find someone to trust you and don’t make rash decisions.
+  - text: Tip... In the early game, always use lights or doors before killing your unsuspecting victim as with 8 crewmates early game is the time most likely to get busted for a rash decision.
+
+  utter_chitchat/among_us_crewmate_win: 
+  - text: Tip... Remember colors. “red, blue nav” is a quick and easy way to remember who, what, when, where. because as you add colors and rooms to that memory bank. “Red, Blue Nav” will remain in your memory for as long as it needs to. Eventually being replaced by newer memories as and when it becomes irrelevant information. If shortly after remembering that information, and blue is dead in Nav… bingo!
+  - text: Be safe, report any suspicion and try to identify any impostor. Dont act suspicion...
+
+  utter_chitchat/what_is_among_us: 
+  - text: Among Us is an online multiplayer social deduction game from developer InnerSloth, similar to Mafia or Werewolf. 
+  - text: You play as a crew member aboard a spaceship, sky headquarters or planet base, attempting to keep your ship together and return back to Earth. But one crew member has been replaced by a parasitic shape-shifting alien who wants to eliminate the rest of the crew before the ship reaches home. Problem is, the imposter looks just like everyone else, and will sabotage the ship, sneak through vents, deceive fellow players and try to frame others, all in an attempt to remain undetected and kill off the rest of the crew.
+
+  utter_chitchat/among_us_devices: 
+  - text: Among Us is free to play on iOS and Android devices or it costs 5 dollars to play on a PC. 
+
+  utter_chitchat/among_us_players: 
+  - text: You can play Among Us with a party of four to 10 people. 
+
+  utter_chitchat/end_game: 
+  - text: The game ends in one of four ways. 1.- All impostors are dead. (Crew Win) 2.- All tasks are completed. (Crew Win) 3.- There are an equal number of crew and impostors. (Impostor Win) 4.- The crew fail to stop a catastrophic sabotage (Impostor Win). 
+
+  utter_chitchat/emergency_meeting: 
+  - text: Emergency meetings are events that occur once the emergency button is pressed. They are not the same as discussion time. During emergency meetings, players are teleported to either Cafeteria or Office, depending on the map, and are unable to move. This then goes to discussion time. Emergency meetings cannot be called via the emergency button during Sabotages, excluding the Door Sabotage.
+
+  utter_chitchat/sequel: 
+  - text: InnerSloth had earlier planned to release a sequel in September 2020 but the developer has cancelled it to focus on improving the game content after Among Us soared in popularity.
+
 
 session_config:
   session_expiration_time: 60
