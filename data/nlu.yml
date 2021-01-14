@@ -90,3 +90,67 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: chitchat/ask_name
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+  
+- intent: chitchat/ask_weather
+  examples: |
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+
+- intent: chitchat/among_us_tasks
+  examples: | 
+    - What are the among us tasks? 
+  
+- intent: chitchat/among_us_general_win
+  examples: | 
+    - How to win in among us? 
+
+- intent: chitchat/among_us_impostor_win
+  examples: | 
+    - How To Win As Impostor In Among Us?
+    - I'm an impostor
+
+- intent: chitchat/among_us_crewmate_win
+  examples: |
+    - How To Win As Crewmate In Among Us?
+    - I'm a crewmate
+
+- intent: chitchat/what_is_among_us 
+  examples: |
+    - Whats is among us?  
+
+- intent: chitchat/among_us_devices
+  examples: | 
+    - On what devices can you play the game? 
+    - Where to play? 
+    - Platforms. 
+
+- intent: chitchat/among_us_players
+  examples: |
+    - How many people can play? 
+    - How many people can play Among us? 
+    - Number of players
+    - Is there a limit of players? 
+
+- intent: chitchat/end_game
+  examples: |
+    - How does a game ends? 
+    - Finish game. 
+
+- intent: chitchat/emergency_meeting
+  examples: |
+    - What is an emergency meeting? 
+    - Emergency meeting. 
+
+- intent: chitchat/sequel 
+  examples: | 
+    - Is there an among us sequel? 
+    - sequel 
