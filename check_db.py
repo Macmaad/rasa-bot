@@ -1,12 +1,29 @@
 import sqlite3
 
-conn = sqlite3.connect('rasa.db')
-c = conn.cursor()
 
-for row in c.execute("pragma table_info(events)"):
-    print(row)
+def db_connection():
+    '''
+    :return: DB cursor
+    '''
+    conn = sqlite3.connect('rasa.db')
+    c = conn.cursor()
 
-print('------------------------------------------------')
+    return c
 
-for row in c.execute("SELECT * FROM events order by id desc limit 10 "):
-    print(row)
+
+def db_query(conn):
+    '''db_query
+    Prints rasa.db structure and last 10 tuples
+    '''
+    for row in conn.execute("pragma table_info(events)"):
+        print(row)
+
+    print('------------------------------------------------')
+
+    for row in conn.execute("SELECT * FROM events order by id desc limit 10 "):
+        print(row)
+
+
+if __name__ == "__main__":
+    conn = db_connection()
+    db_query(conn)
